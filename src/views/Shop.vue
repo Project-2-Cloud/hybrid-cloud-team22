@@ -12,9 +12,9 @@
     
 <script>
 // @ is an alias to /src
-import Item from "@/Item.vue"  
+import Item from "@/Item.vue"
 export default {
-  name: 'Home',
+  name: 'Shop',
   computed: {
     products() {
       return this.$store.state.products;
