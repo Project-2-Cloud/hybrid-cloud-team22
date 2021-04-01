@@ -1,12 +1,15 @@
 <template>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
   <div class="container">
-    <router-link to="/" class="navbar-brand mr-auto">Blue Store</router-link>
+    <router-link to="/" class="navbar-brand mr-auto">Smart Cast</router-link>
       <ul class="navbar-nav mr-auto">
       </ul>
       <ul class="nav navbar-nav">
         <router-link to="/" tag="li" v-if="!isAuthenticated" class="nav-item" active-class="active">
           <a @click="onLoginClicked" class="nav-link">Login</a>
+        </router-link>
+        <router-link to=Home tag="li" class="nav-item" active-class="active">
+          <a class="nav-link">Shop</a>
         </router-link>
         <li v-if="isAuthenticated" class="li-pointer nav-item">
           <div class="dropdown">
